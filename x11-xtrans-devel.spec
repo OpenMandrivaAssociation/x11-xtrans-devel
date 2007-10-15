@@ -1,6 +1,6 @@
 Name: x11-xtrans-devel
 Summary:  Abstract network code for X
-Version: 1.0.3
+Version: 1.0.4
 Release: %mkrel 1
 Group: Development/X11
 License: MIT
@@ -17,9 +17,7 @@ Abstract network code for X
 %setup -q -n xtrans-%{version}
 
 %build
-%configure2_5x	--x-includes=%{_includedir}\
-		--x-libraries=%{_libdir}
-
+%configure
 %make
 
 %install
