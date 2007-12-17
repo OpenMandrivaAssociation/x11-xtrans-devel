@@ -6,7 +6,6 @@ Group: Development/X11
 License: MIT
 URL: http://xorg.freedesktop.org
 Source0: http://xorg.freedesktop.org/releases/individual/lib/xtrans-%{version}.tar.bz2
-BuildRoot: %{_tmppath}/%{name}-root
 
 Conflicts: libxorg-x11-devel < 7.0
 
