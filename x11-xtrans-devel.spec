@@ -1,6 +1,6 @@
 Name: x11-xtrans-devel
 Summary:  Abstract network code for X
-Version: 1.2.4
+Version: 1.2.5
 Release: %mkrel 1
 Group: Development/X11
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -34,7 +34,7 @@ fi
 
 %files
 %defattr(-,root,root)
-%{_libdir}/pkgconfig/xtrans.pc
+%{_datadir}/pkgconfig/xtrans.pc
 %{_datadir}/aclocal/xtrans.m4
 %{_includedir}/X11/Xtrans/Xtransint.h
 %{_includedir}/X11/Xtrans/Xtrans.h
