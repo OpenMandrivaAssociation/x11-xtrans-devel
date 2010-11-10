@@ -23,6 +23,7 @@ Abstract network code for X
 %install
 rm -rf %{buildroot}
 %makeinstall_std
+rm %{buildroot}%_datadir/doc/xtrans/xtrans.*
 
 %clean
 rm -rf %{buildroot}
@@ -34,6 +35,7 @@ fi
 
 %files
 %defattr(-,root,root)
+%doc doc/xtrans.xml
 %{_datadir}/pkgconfig/xtrans.pc
 %{_datadir}/aclocal/xtrans.m4
 %{_includedir}/X11/Xtrans/Xtransint.h
