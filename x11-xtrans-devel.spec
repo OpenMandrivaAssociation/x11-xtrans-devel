@@ -1,7 +1,7 @@
 Name: x11-xtrans-devel
 Summary:  Abstract network code for X
 Version: 1.2.6
-Release: %mkrel 1
+Release: %mkrel 2
 Group: Development/X11
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License: MIT
