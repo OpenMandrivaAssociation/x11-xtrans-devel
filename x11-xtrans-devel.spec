@@ -1,9 +1,8 @@
 Name: x11-xtrans-devel
 Summary:  Abstract network code for X
-Version: 1.2.6
-Release: %mkrel 2
+Version: 1.2.7
+Release: 1
 Group: Development/X11
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License: MIT
 URL: http://xorg.freedesktop.org
 Source0: http://xorg.freedesktop.org/releases/individual/lib/xtrans-%{version}.tar.bz2
@@ -21,12 +20,8 @@ Abstract network code for X
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 rm %{buildroot}%_datadir/doc/xtrans/xtrans.*
-
-%clean
-rm -rf %{buildroot}
 
 %pre 
 if [ -h %{_includedir}/X11 ]; then
@@ -34,7 +29,6 @@ if [ -h %{_includedir}/X11 ]; then
 fi
 
 %files
-%defattr(-,root,root)
 %doc doc/xtrans.xml
 %{_datadir}/pkgconfig/xtrans.pc
 %{_datadir}/aclocal/xtrans.m4
