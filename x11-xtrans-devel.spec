@@ -9,6 +9,7 @@ Source0: http://xorg.freedesktop.org/releases/individual/lib/xtrans-%{version}.t
 Source1: %name.rpmlintrc
 Patch0: xtrans-1.2.7-tirpc.patch
 Conflicts: libxorg-x11-devel < 7.0
+BuildRequires: pkgconfig(xorg-macros) >= 1.12
 
 %description
 Abstract network code for X
