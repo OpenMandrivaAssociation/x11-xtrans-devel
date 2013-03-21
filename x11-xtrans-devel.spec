@@ -8,6 +8,7 @@ URL: http://xorg.freedesktop.org
 Source0: http://xorg.freedesktop.org/releases/individual/lib/xtrans-%{version}.tar.bz2
 Source1: %name.rpmlintrc
 Patch0: xtrans-1.2.7-tirpc.patch
+Patch1:	xtrans-aarch64.patch
 Conflicts: libxorg-x11-devel < 7.0
 BuildRequires: pkgconfig(xorg-macros) >= 1.12
 
