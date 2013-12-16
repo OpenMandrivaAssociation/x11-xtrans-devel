@@ -1,14 +1,13 @@
 Name: x11-xtrans-devel
 Summary:  Abstract network code for X
-Version: 1.2.7
-Release: 7
+Version: 1.3.2
+Release: 1
 Group: Development/X11
 License: MIT
 URL: http://xorg.freedesktop.org
 Source0: http://xorg.freedesktop.org/releases/individual/lib/xtrans-%{version}.tar.bz2
 Source1: %name.rpmlintrc
 Patch0: xtrans-1.2.7-tirpc.patch
-Patch1:	xtrans-aarch64.patch
 Conflicts: libxorg-x11-devel < 7.0
 BuildRequires: pkgconfig(xorg-macros) >= 1.12
 
@@ -44,7 +43,6 @@ fi
 %{_includedir}/X11/Xtrans/Xtrans.c
 %{_includedir}/X11/Xtrans/Xtranslcl.c
 %{_includedir}/X11/Xtrans/Xtranssock.c
-%{_includedir}/X11/Xtrans/Xtranstli.c
 %{_includedir}/X11/Xtrans/Xtransutil.c
 %{_includedir}/X11/Xtrans/transport.c
 
