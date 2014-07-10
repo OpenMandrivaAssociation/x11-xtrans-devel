@@ -1,7 +1,7 @@
 Name:		x11-xtrans-devel
 Summary:	Abstract network code for X
-Version:	1.3.2
-Release:	3
+Version:	1.3.4
+Release:	1
 Group:		Development/X11
 License:	MIT
 URL:		http://xorg.freedesktop.org
