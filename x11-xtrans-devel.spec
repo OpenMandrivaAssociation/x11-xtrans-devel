@@ -1,7 +1,7 @@
 Name:		x11-xtrans-devel
 Summary:	Abstract network code for X
-Version:	1.3.5
-Release:	7
+Version:	1.4.0
+Release:	1
 Group:		Development/X11
 License:	MIT
 URL:		http://xorg.freedesktop.org
@@ -15,19 +15,18 @@ BuildRequires:	pkgconfig(xorg-macros) >= 1.12
 Abstract network code for X.
 
 %prep
-%setup -q -n xtrans-%{version}
-%apply_patches
+%autosetup -n xtrans-%{version} -p1
 aclocal
 automake -a
 autoconf
 
 %build
 %configure
-%make
+%make_build
 
 %install
-%makeinstall_std
-rm %{buildroot}%_datadir/doc/xtrans/xtrans.*
+%make_install
+rm %{buildroot}%{_datadir}/doc/xtrans/xtrans.*
 
 %files
 %doc doc/xtrans.xml
