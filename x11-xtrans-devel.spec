@@ -6,7 +6,7 @@ Version:	1.5.1
 Release:	1
 Group:		Development/X11
 License:	MIT
-URL:		http://xorg.freedesktop.org
+URL:		https://xorg.freedesktop.org
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/xtrans-%{version}.tar.xz
 Source1:	%{name}.rpmlintrc
 Patch0:		xtrans-1.2.7-tirpc.patch
