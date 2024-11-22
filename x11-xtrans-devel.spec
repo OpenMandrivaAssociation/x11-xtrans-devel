@@ -2,12 +2,12 @@
 
 Name:		x11-xtrans-devel
 Summary:	Abstract network code for X
-Version:	1.5.1
+Version:	1.5.2
 Release:	1
 Group:		Development/X11
 License:	MIT
 URL:		https://xorg.freedesktop.org
-Source0:	http://xorg.freedesktop.org/releases/individual/lib/xtrans-%{version}.tar.xz
+Source0:	https://xorg.freedesktop.org/releases/individual/lib/xtrans-%{version}.tar.xz
 Source1:	%{name}.rpmlintrc
 Patch0:		xtrans-1.2.7-tirpc.patch
 Conflicts:	libxorg-x11-devel < 7.0
