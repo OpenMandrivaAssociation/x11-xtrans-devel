@@ -2,7 +2,7 @@
 
 Name:		x11-xtrans-devel
 Summary:	Abstract network code for X
-Version:	1.5.2
+Version:	1.6.0
 Release:	1
 Group:		Development/X11
 License:	MIT
