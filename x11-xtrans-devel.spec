@@ -11,6 +11,11 @@ Source0:	https://xorg.freedesktop.org/releases/individual/lib/xtrans-%{version}.
 Source1:	%{name}.rpmlintrc
 Patch0:		xtrans-1.2.7-tirpc.patch
 Conflicts:	libxorg-x11-devel < 7.0
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(xorg-macros) >= 1.12
 
 %description
