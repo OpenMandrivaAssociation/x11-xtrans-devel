@@ -3,7 +3,7 @@
 Name:		x11-xtrans-devel
 Summary:	Abstract network code for X
 Version:	1.6.0
-Release:	1
+Release:	2
 Group:		Development/X11
 License:	MIT
 URL:		https://xorg.freedesktop.org
@@ -28,12 +28,13 @@ automake -a
 autoconf
 
 %build
-%configure
+%configure \
+	--disable-docs
 %make_build
 
 %install
 %make_install
-rm %{buildroot}%{_datadir}/doc/xtrans/xtrans.*
+rm -f %{buildroot}%{_datadir}/doc/xtrans/xtrans.*
 
 %files
 %doc doc/xtrans.xml
